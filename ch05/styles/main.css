@@ -60,7 +60,7 @@ body {
     font-size: 100%;
     width: 90%;
     margin:auto;
-    border:4px double var(--accent-color);
+    border:10px double var(--accent-color);
     background-color: var(--content);
 }
 footer{
