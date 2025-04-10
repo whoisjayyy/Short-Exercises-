@@ -1,4 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: aliceblue;
+    --accent-color: rebeccapurple;
+    --content: white;
+}
+html{
+    background-color: var(--background-color);
+}
+main{
+
+    & img {
+        float:left;
+        margin: 0 1em 1em 0;
+        
+    }
+    padding:1em;
+
+    & h1{
+        font-size: 150%;
+        color: var(--accent-color);
+        margin: .5em 0 .5em 0;
+    }
+
+    & h2{
+        font-size: 125%;
+        margin: .5em 0 .5em 0;
+        clear: left;
+    }
+    & h3{
+        font-size: 115%;
+        margin: .25em 0 .25em 0;
+    
+    }
+    & blockquote{
+        margin: .5em 0 .5em 0;
+    }
+    & p{
+        margin: 1em 0 1em 0
+    }
+    & ul{
+        margin: .5em 0 .5em 0;
+    }
+    & li{
+        margin: 0 0 1em 1em;
+    }
+    & cite{
+        color: var(--accent-color);
+        font-style: normal;
+        font-weight:bold ;
+    }
+
+}
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+    width: 90%;
+    margin:auto;
+    border:4px double var(--accent-color);
+    background-color: var(--content);
+}
+footer{
+    border-top: solid var(--accent-color);
+
+    & p {
+        font-size: 90%;
+        font-weight: bold;
+        text-align: center;
+        margin: .5em 0 .5em 0;
+    }
 }
