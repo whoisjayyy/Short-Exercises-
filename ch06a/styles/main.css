@@ -56,10 +56,13 @@ header {
 /* the styles for the main element */
 main {
 	clear: left;
+	display:flex;
 }
 
 /* the styles for the section */
 section {
+	order:2;
+	flex-basis: 75%;
 	& h1 {
 		color: var(--primary-color);
 	}
@@ -69,11 +72,16 @@ section {
 article {
 	& img {
 		border: 1px solid var(--dark);
+		float: left;
+		margin: .5em 1.25em 1.25em 0; 
+		width: min(100%,300px);
 	}
 }
 
 /* the styles for the aside */
 aside {
+	order:1;
+	flex-basis: 25%;
 	& h2 {
 		color: var(--primary-color);
 	}
